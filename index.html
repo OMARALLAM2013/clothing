@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="clothing.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="swiper.css" />
+    <title>clothes store</title>
+</head>
+<body>
+    <div class="hello">
+        <h3>Welcome to our store</h3>
+            <hr style="color: var(--bg-color);">
+    </div>
+    <nav class="navbar">
+        <div class="logo"><a href="#">clothes store</a></div>
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop All</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottoms</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image/extra_173.webp"></div>
+      <div class="swiper-slide"><img src="image/simmi_finals-10_ac67a97e-1391-428a-ac21-88b076335956.webp"></div>
+      <div class="swiper-slide"><img src="image/simmi_finals-19.webp"></div>
+      <div class="swiper-slide"><img src="image/simmi_finals-16.webp"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+<div class="hr-bg">
+  <hr style="color: var(--bg-color); padding: 20px 0;">
+  <hr style="color: var(--bg-color);">
+</div>
+
+
+    </section>
+    
+    <section class="link">
+        <div class="container">
+        <h3>...</h3>
+        <ul class="links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">privacy Policy</a></li>
+            <li><a href="#">Return & Exchanges</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </div>
+    <div class="inp">
+        <h2>Subscribe to our emails</h2>
+        <div class="arrow">
+            <input type="email" placeholder="Email">
+            <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+    </div>
+    </section>
+
+    <script src="clothing.js"></script>
+    <script src="swiper.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>
